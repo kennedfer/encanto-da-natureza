@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #ffffff;
+}
+
+section {
+  display: grid;
+
+  place-items: center;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+
+  background-color: rgb(123, 199, 199);
+  padding: 100px;
+}
+
+img {
+  width: 500px;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
