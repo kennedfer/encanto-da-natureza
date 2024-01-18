@@ -1,6 +1,6 @@
 :root {
-  --preview-color: rgb(0, 255, 20);
-  --primary-color-base: 0, 255, 20;
+  --preview-color: rgb(0, 197, 247);
+  --primary-color-base: 0, 197, 247;
   --primary-color: rgb(var(--primary-color-base));
   --primary-color-transparent: rgba(var(--primary-color-base), 0.5);
 
@@ -14,8 +14,6 @@ section {
   place-items: center;
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
-
-  background-color: rgb(123, 199, 199);
   padding: var(--section-padding-vertical) var(--section-padding-horizontal);
 
   height: calc(100vh - var(--section-padding-vertical));
@@ -48,6 +46,8 @@ button {
 .primary-button {
   color: white;
   background-color: var(--primary-color);
+
+  box-shadow: 0 0 30px var(--primary-color-transparent);
 }
 
 .cards-container {
@@ -55,4 +55,15 @@ button {
 
   justify-content: space-around;
   padding: var(--section-padding-horizontal) var(--section-padding-horizontal);
+}
+
+.card {
+  aspect-ratio: 1;
+  box-shadow: 0 0 20px var(--primary-color-transparent);
+
+  display: flex;
+  flex-direction: column;
+
+  place-items: center;
+  justify-content: center;
 }
