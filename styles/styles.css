@@ -1,5 +1,9 @@
 :root {
-  --primary-color: #fff;
+  --preview-color: rgb(0, 255, 20);
+  --primary-color-base: 0, 255, 20;
+  --primary-color: rgb(var(--primary-color-base));
+  --primary-color-transparent: rgba(var(--primary-color-base), 0.5);
+
   --section-padding-vertical: 10px;
   --section-padding-horizontal: 150px;
 }
@@ -17,6 +21,13 @@ section {
   height: calc(100vh - var(--section-padding-vertical));
 }
 
+section > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
 img {
   width: 500px;
 }
@@ -27,8 +38,21 @@ h1 {
 }
 
 button {
-  padding: 10px 30px;
+  padding: 13px 30px;
   border: none;
 
   border-radius: 30px;
+}
+
+/* Classes  */
+.primary-button {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.cards-container {
+  display: flex;
+
+  justify-content: space-around;
+  padding: var(--section-padding-horizontal) var(--section-padding-horizontal);
 }
