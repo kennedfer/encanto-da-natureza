@@ -1,8 +1,11 @@
 :root {
-  --preview-color: rgb(0, 197, 247);
+  /* --preview-color: rgb(0, 197, 247); */
   --primary-color-base: 0, 197, 247;
   --primary-color: rgb(var(--primary-color-base));
-  --primary-color-transparent: rgba(var(--primary-color-base), 0.5);
+  --primary-color-transparent: rgba(var(--primary-color-base), 0.15);
+
+  --text-color-dark: rgb(59,59,59);
+  --text-color-gray: rgb(153,153,153);
 
   --section-padding-vertical: 10px;
   --section-padding-horizontal: 150px;
@@ -47,7 +50,7 @@ button {
   color: white;
   background-color: var(--primary-color);
 
-  box-shadow: 0 0 30px var(--primary-color-transparent);
+  box-shadow: 0 0 30px var(--primary-color);
 }
 
 .cards-container {
@@ -59,11 +62,41 @@ button {
 
 .card {
   aspect-ratio: 1;
-  box-shadow: 0 0 20px var(--primary-color-transparent);
+  width: 200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
+  padding: 30px;
 
   display: flex;
   flex-direction: column;
 
+  gap: 5px;
+
   place-items: center;
   justify-content: center;
+}
+
+.card__icon{
+  aspect-ratio: 1;
+  width: 55px;
+  
+  display: grid;
+  place-items: center;
+
+  font-size: 25px;
+
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  color: var(--primary-color);
+  background-color: var(--primary-color-transparent);
+}
+
+.card__title{
+  text-transform: uppercase;
+  color: var(--text-color-dark);
+}
+
+.card__description{
+  color: var(--text-color-gray);
 }
