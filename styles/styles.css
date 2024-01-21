@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   /* --preview-color: rgb(0, 197, 247); */
   --primary-color-base: 0, 197, 247;
@@ -9,6 +11,12 @@
 
   --section-padding-vertical: 10px;
   --section-padding-horizontal: 150px;
+
+  --text-font:'Montserrat', "arial";
+}
+
+html{ 
+  font-family: var(--text-font); 
 }
 
 section {
@@ -36,6 +44,11 @@ img {
 h1 {
   font-size: 60px;
   text-transform: uppercase;
+
+  font-family: var(--text-font);
+  color: var(--text-color-dark);
+
+  font-weight: 900;
 }
 
 button {
@@ -43,9 +56,25 @@ button {
   border: none;
 
   border-radius: 30px;
+  font-family: var(--text-font); 
 }
 
 /* Classes  */
+.main-section__description{
+  color: var(--text-color-gray);
+} 
+
+.main-section__youtube-button{
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.youtube-button__icon{
+  padding: 15px;
+  border-radius: 50px;
+  border: 1px solid var(--primary-color);
+}
+
 .primary-button {
   color: white;
   background-color: var(--primary-color);
@@ -72,6 +101,7 @@ button {
 
   gap: 5px;
 
+  box-sizing:content-box;
   place-items: center;
   justify-content: center;
 }
