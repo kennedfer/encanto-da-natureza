@@ -56,6 +56,8 @@ button {
   border: none;
 
   border-radius: 30px;
+
+  font-weight: 700;
   font-family: var(--text-font); 
 }
 
@@ -66,12 +68,22 @@ button {
 
 .main-section__youtube-button{
   background-color: transparent;
+   
+  gap: 10px;
+
+  place-items: center;
   color: var(--primary-color);
 }
 
 .youtube-button__icon{
-  padding: 15px;
+  padding: 8px;
+  margin-left: 5px;
+
+  aspect-ratio: 1;
+  width: 12px;
   border-radius: 50px;
+
+
   border: 1px solid var(--primary-color);
 }
 
@@ -85,7 +97,12 @@ button {
 .cards-container {
   display: flex;
 
-  justify-content: space-around;
+  place-items: center;
+  justify-content: center;
+  justify-items: center;
+
+  gap: 20px;
+
   padding: var(--section-padding-horizontal) var(--section-padding-horizontal);
 }
 
@@ -94,14 +111,13 @@ button {
   width: 200px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 
-  padding: 30px;
+  padding: 50px;
 
   display: flex;
   flex-direction: column;
 
   gap: 5px;
 
-  box-sizing:content-box;
   place-items: center;
   justify-content: center;
 }
@@ -124,9 +140,11 @@ button {
 
 .card__title{
   text-transform: uppercase;
+  font-weight: 700;
   color: var(--text-color-dark);
 }
 
 .card__description{
+  text-align: center;
   color: var(--text-color-gray);
 }
