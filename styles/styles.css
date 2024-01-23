@@ -17,12 +17,7 @@
 
 html{ 
   font-family: var(--text-font); 
-}
-
-section{
-  padding: var(--section-padding-vertical) var(--section-padding-horizontal); 
-  height: calc(100vh - var(--section-padding-vertical));
-}
+} 
  
 img {
   width: 500px;
@@ -45,7 +40,8 @@ button {
   border-radius: 30px;
 
   font-weight: 700;
-  font-family: var(--text-font); 
+  font-family: var(--text-font);
+  text-transform: capitalize;
 }
 
 /* Classes  */ 
@@ -54,6 +50,9 @@ button {
   place-items: center;
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column; 
+
+  padding: 10px var(--section-padding-horizontal);
+  height: calc(100vh - 10px);
 }
 
 .main-section > div {
@@ -156,11 +155,19 @@ button {
   flex-direction: column;
 
   gap: 20px;
-  background-color: grey;
+  background-color: #f8f8f8;
+  
+  padding: 100px var(--section-padding-horizontal);
+  height: calc(100vh - 100px);
 }
 
 .gallery-section__header{
   display: flex;
   
   justify-content: space-between;
+}
+
+.gallery-section__show-more-button-container{
+  display: grid;
+  place-items: center;
 }
