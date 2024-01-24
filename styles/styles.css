@@ -44,6 +44,12 @@ figure{
   display: inline-block;
 }
 
+strong{ 
+  background-color: transparent;
+  color:var(--primary-color);
+  font-weight: 600;
+}
+
 /* Classes  */ 
 .main-section {
   display: grid; 
@@ -62,8 +68,9 @@ figure{
   gap: 20px;
 }
 
-.main-section__description{
+.section-description{
   color: var(--text-color-gray);
+  line-height: 30px;
 } 
 
 .main-section__youtube-button{
@@ -181,8 +188,11 @@ figure{
   grid-template-columns: repeat(3, 1fr);
   max-height: 100%;
   overflow: hidden;
+  gap: 10px;
+  grid-template-rows: masonry;
 }
 
 .gallery-container__gallery-image{
   max-width: 100%;
+  border-radius: 10px;
 }
