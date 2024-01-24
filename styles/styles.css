@@ -104,6 +104,8 @@ strong{
   background-color: var(--primary-color);
 
   box-shadow: 0 0 30px var(--primary-color);
+
+  transition: .25s;
 }
 
 .cards-container {
@@ -195,4 +197,11 @@ strong{
 .gallery-container__gallery-image{
   max-width: 100%;
   border-radius: 10px;
+}
+
+/* Hovers */
+.primary-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 50px var(--primary-color);
+  scale: 1.05;
 }
