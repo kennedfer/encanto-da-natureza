@@ -71,6 +71,7 @@ strong{
 .section-description{
   color: var(--text-color-gray);
   line-height: 30px;
+  text-align: justify;
 } 
 
 .main-section__youtube-button{
