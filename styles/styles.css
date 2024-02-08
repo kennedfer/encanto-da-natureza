@@ -52,6 +52,24 @@ strong {
   font-weight: 600;
 }
 
+footer {
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  place-items: center;
+  justify-content: center;
+  background-color: var(--section-background-dark);
+}
+
+small {
+  font-size: smaller;
+  color: var(--text-color-dark);
+}
+
 /* Classes  */
 .main-section {
   display: grid;
@@ -223,6 +241,21 @@ strong {
 
 .qrcode-container__qrcode-caption {
   color: var(--text-color-dark);
+}
+
+.footer__navigation-container {
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+  color: var(--text-color-gray);
+}
+
+.footer__contact-info {
+  display: flex;
+  gap: 5px;
+  font-size: smaller;
+
+  color: var(--text-color-gray);
 }
 
 /* Hovers */
