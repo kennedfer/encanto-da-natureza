@@ -96,7 +96,7 @@ small {
 
 .main-section__youtube-button {
   background-color: transparent;
-
+  transition: 0.25s;
   gap: 10px;
 
   place-items: center;
@@ -250,6 +250,10 @@ small {
   color: var(--text-color-gray);
 }
 
+.navigation-container__nav-item {
+  transition: 0.5s;
+}
+
 .footer__contact-info {
   display: flex;
   gap: 5px;
@@ -258,9 +262,30 @@ small {
   color: var(--text-color-gray);
 }
 
-/* Hovers */
+/* Hovers*/
 .primary-button:hover {
   cursor: pointer;
   box-shadow: 0 0 50px var(--primary-color);
+  scale: 1.025;
+}
+
+.main-section__youtube-button:hover {
+  cursor: pointer;
+  text-shadow: 0 0 30px var(--primary-color);
+  scale: 1.025;
+}
+
+.navigation-container__nav-item:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Clicks */
+.primary-button:active,
+.main-section__youtube-button:active {
+  scale: 1;
+}
+
+.navigation-container__nav-item:active {
   scale: 1.05;
 }
