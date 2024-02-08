@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-    <section class="main-section">
+    <section id="main-section" class="main-section">
       <div>
         <h1>
           Boi Encanto<br />
@@ -55,7 +55,7 @@
         </figure>
       </div>
     </section>
-    <section class="gallery-section">
+    <section id="gallery-section" class="gallery-section">
       <div class="gallery-section__header">
         <h1>nossa galeria</h1>
         <p>nossas fotos durante apresentações</p>
@@ -212,7 +212,7 @@
         </p>
       </div>
     </div>
-    <section class="main-section about-section">
+    <section id="about-section" class="main-section about-section">
       <img
         alt="Logomarca do grupo folclórico Boi Encanto da Natureza"
         class="section-image"
@@ -231,7 +231,7 @@
         </p>
       </div>
     </section>
-    <section class="main-section">
+    <section id="donation-section" class="main-section">
       <div>
         <h1>doações</h1>
         <p class="section-description">
@@ -255,10 +255,16 @@
     </section>
     <footer>
       <nav class="footer__navigation-container">
-        <span class="navigation-container__nav-item">inicio</span>
-        <span class="navigation-container__nav-item">galeria</span>
-        <span class="navigation-container__nav-item">sobre nos</span>
-        <span class="navigation-container__nav-item">doacoes</span>
+        <span id="home-nav" class="navigation-container__nav-item">inicio</span>
+        <span id="gallery-nav" class="navigation-container__nav-item"
+          >galeria</span
+        >
+        <span id="about-us-nav" class="navigation-container__nav-item"
+          >sobre nos</span
+        >
+        <span id="donation-nav" class="navigation-container__nav-item"
+          >doacoes</span
+        >
       </nav>
       <div class="footer__contact-info">
         <i class="fa-solid fa-location-dot"></i>
@@ -273,5 +279,6 @@
       </div>
       <small class="footer-copy">Boi Encanto da Natureza &copy; 2024</small>
     </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
