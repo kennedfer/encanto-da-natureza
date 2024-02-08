@@ -9,6 +9,8 @@
   --text-color-dark: rgb(59, 59, 59);
   --text-color-gray: rgb(153, 153, 153);
 
+  --section-background-dark: #f7f7f7;
+
   --section-padding-vertical: 10px;
   --section-padding-horizontal: 150px;
 
@@ -169,7 +171,7 @@ strong {
   flex-direction: column;
 
   gap: 20px;
-  background-color: #f8f8f8;
+  background-color: var(--section-background-dark);
 
   padding: 100px var(--section-padding-horizontal);
   height: calc(100vh - 100px);
@@ -184,6 +186,8 @@ strong {
 .gallery-section__show-more-button-container {
   display: grid;
   place-items: center;
+
+  margin-top: 20px;
 }
 
 .gallery-section__gallery-container {
@@ -198,6 +202,10 @@ strong {
 .gallery-container__gallery-image {
   max-width: 100%;
   border-radius: 10px;
+}
+
+.about-section {
+  background-color: var(--section-background-dark);
 }
 
 .qrcode-container {
