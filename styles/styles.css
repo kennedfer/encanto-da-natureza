@@ -201,6 +201,7 @@ small {
 
   padding: 100px var(--section-padding-horizontal);
   height: calc(100vh - 100px);
+  transition: height 2s ease;
 }
 
 .gallery-section__header {

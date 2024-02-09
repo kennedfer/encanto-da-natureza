@@ -4,7 +4,8 @@ function scrollTo(element){
 }
 
 function expandGallery(){
-    gallerySection.style.height = 'auto';
+    const galleryContainer =  gallerySection.children.item(1); 
+    gallerySection.style.height =galleryContainer.scrollHeight+galleryContainer.clientHeight-100+'px';
     showMoreGalleryButton.textContent = 'mostrar menos';
 }
 
