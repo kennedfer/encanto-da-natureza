@@ -101,6 +101,15 @@ small {
 
   place-items: center;
   color: var(--primary-color);
+
+  padding: 13px 30px;
+  border: none;
+
+  text-decoration: none;
+
+  font-weight: 700;
+  font-family: var(--text-font);
+  text-transform: capitalize;
 }
 
 .section-image {

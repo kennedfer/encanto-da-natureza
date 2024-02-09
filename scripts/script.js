@@ -3,14 +3,29 @@ function scrollTo(element){
     element.scrollIntoView({behavior:'smooth'}); 
 }
 
+function expandGallery(){
+    gallerySection.style.height = 'auto';
+    showMoreGalleryButton.textContent = 'mostrar menos';
+}
+
+function collapseGallery(){
+    gallerySection.style.height = 'calc(100vh - 100px)';
+    showMoreGalleryButton.textContent = 'mostrar mais';
+}
+
+function handleShowMoreGalleryClick(){
+    showMoreGalleryButton.textContent == 'mostrar mais' ? expandGallery() : collapseGallery();
+}
+
 const homeSection = document.getElementById('main-section');
 const aboutSection = document.getElementById('about-section');
 const gallerySection = document.getElementById('gallery-section');
 const donationSection = document.getElementById('donation-section');
 
 const aboutUsButton = document.getElementById('about-us-button');
- 
+const showMoreGalleryButton = document.getElementById('show-more-button');
 aboutUsButton.addEventListener('click', ()=> scrollTo(aboutSection));
+showMoreGalleryButton.addEventListener('click', handleShowMoreGalleryClick);
 
 
 const homeNav = document.getElementById('home-nav');
