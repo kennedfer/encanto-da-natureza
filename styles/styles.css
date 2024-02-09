@@ -52,6 +52,14 @@ strong {
   font-weight: 600;
 }
 
+header {
+  padding: 30px var(--section-padding-horizontal);
+  padding-bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 footer {
   padding: 25px;
 
@@ -71,6 +79,12 @@ small {
 }
 
 /* Classes  */
+.header__navigation-container {
+  display: flex;
+  gap: 30px;
+  color: var(--text-color-dark);
+}
+
 .main-section {
   display: grid;
   place-items: center;
@@ -261,6 +275,7 @@ small {
 
 .navigation-container__nav-item {
   transition: 0.5s;
+  text-transform: capitalize;
 }
 
 .footer__contact-info {

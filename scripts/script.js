@@ -29,12 +29,22 @@ aboutUsButton.addEventListener('click', ()=> scrollTo(aboutSection));
 showMoreGalleryButton.addEventListener('click', handleShowMoreGalleryClick);
 
 
-const homeNav = document.getElementById('home-nav');
-const galleryNav = document.getElementById('gallery-nav');
-const aboutUsNav = document.getElementById('about-us-nav');
-const donationNav = document.getElementById('donation-nav');
+const footerHomeNav = document.getElementById('footer-home-nav');
+const footerGalleryNav = document.getElementById('footer-gallery-nav');
+const footerAboutUsNav = document.getElementById('footer-about-us-nav');
+const footerDonationNav = document.getElementById('footer-donation-nav');
 
-homeNav.addEventListener('click', ()=> scrollTo(homeSection));
-galleryNav.addEventListener('click', ()=> scrollTo(gallerySection));
-aboutUsNav.addEventListener('click', ()=> scrollTo(aboutSection));
-donationNav.addEventListener('click', ()=> scrollTo(donationSection));
+const headerHomeNav = document.getElementById('header-home-nav');
+const headerGalleryNav = document.getElementById('header-gallery-nav');
+const headerAboutUsNav = document.getElementById('header-about-us-nav');
+const headerDonationNav = document.getElementById('header-donation-nav');
+
+headerHomeNav.addEventListener('click', ()=> scrollTo(homeSection));
+headerGalleryNav.addEventListener('click', ()=> scrollTo(gallerySection));
+headerAboutUsNav.addEventListener('click', ()=> scrollTo(aboutSection));
+headerDonationNav.addEventListener('click', ()=> scrollTo(donationSection));
+
+footerHomeNav.addEventListener('click', ()=> scrollTo(homeSection));
+footerGalleryNav.addEventListener('click', ()=> scrollTo(gallerySection));
+footerAboutUsNav.addEventListener('click', ()=> scrollTo(aboutSection));
+footerDonationNav.addEventListener('click', ()=> scrollTo(donationSection));
