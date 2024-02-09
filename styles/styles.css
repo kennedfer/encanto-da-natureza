@@ -111,22 +111,21 @@ small {
   font-family: var(--text-font);
   text-transform: capitalize;
 }
-
-.section-image {
-  width: 500px;
-}
-
 .youtube-button__icon {
-  padding: 8px;
+  padding: 7px;
   margin-left: 5px;
 
   aspect-ratio: 1;
-  width: 12px;
+  width: 15px;
   border-radius: 50px;
 
   text-align: center;
 
   border: 1px solid var(--primary-color);
+}
+
+.section-image {
+  width: 500px;
 }
 
 .primary-button {
