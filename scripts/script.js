@@ -5,7 +5,7 @@ function scrollTo(element){
 
 function expandGallery(){
     const galleryContainer =  gallerySection.children.item(1); 
-    gallerySection.style.height =galleryContainer.scrollHeight+galleryContainer.clientHeight-100+'px';
+    gallerySection.style.height =galleryContainer.scrollHeight +170+'px';
     showMoreGalleryButton.textContent = 'mostrar menos';
 }
 
