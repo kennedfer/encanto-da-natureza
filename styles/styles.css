@@ -53,11 +53,15 @@ strong {
 }
 
 header {
-  padding: 30px var(--section-padding-horizontal);
-  padding-bottom: 0;
+  padding: 5px var(--section-padding-horizontal);
+  width: calc(100vw - var(--section-padding-horizontal) * 2 - 15px);
+  position: absolute;
+
+  place-items: center;
 
   display: flex;
   justify-content: space-between;
+  font-size: small;
 }
 
 footer {
@@ -79,6 +83,10 @@ small {
 }
 
 /* Classes  */
+.header-logo {
+  width: 120px;
+}
+
 .header__navigation-container {
   display: flex;
   gap: 30px;
@@ -86,10 +94,11 @@ small {
 }
 
 .main-section {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   place-items: center;
-  grid-auto-columns: minmax(0, 1fr);
-  grid-auto-flow: column;
+
+  gap: 20px;
 
   padding: 10px var(--section-padding-horizontal);
   height: calc(100vh - 10px);
@@ -104,7 +113,7 @@ small {
 
 .section-description {
   color: var(--text-color-gray);
-  line-height: 30px;
+  line-height: 35px;
   text-align: justify;
 }
 
