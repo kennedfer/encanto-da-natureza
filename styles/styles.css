@@ -22,7 +22,7 @@ html {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 3.1rem;
   text-transform: uppercase;
 
   font-family: var(--text-font);
@@ -53,8 +53,8 @@ strong {
 }
 
 header {
-  padding: 5px var(--section-padding-horizontal);
-  width: calc(100vw - var(--section-padding-horizontal) * 2 - 15px);
+  padding: 20px var(--section-padding-horizontal);
+  width: calc(100vw - var(--section-padding-horizontal) * 2);
   position: absolute;
 
   place-items: center;
@@ -62,6 +62,13 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: small;
+
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+header > span {
+  flex-grow: 1;
 }
 
 footer {
@@ -113,11 +120,20 @@ small {
 
 .section-description {
   color: var(--text-color-gray);
-  line-height: 35px;
+  line-height: 30px;
   text-align: justify;
 }
 
+.main-section__buttons-container {
+  display: flex;
+  place-items: center;
+
+  color: var(--primary-color);
+}
+
 .main-section__youtube-button {
+  display: flex;
+
   background-color: transparent;
   transition: 0.25s;
   gap: 10px;
@@ -134,6 +150,7 @@ small {
   font-family: var(--text-font);
   text-transform: capitalize;
 }
+
 .youtube-button__icon {
   padding: 7px;
   margin-left: 5px;
@@ -195,7 +212,7 @@ small {
   display: grid;
   place-items: center;
 
-  font-size: 25px;
+  font-size: 1.56rem;
 
   border-radius: 10px;
   margin-bottom: 10px;
@@ -256,6 +273,11 @@ small {
 
 .about-section {
   background-color: var(--section-background-dark);
+}
+
+.donation-section {
+  display: flex;
+  gap: 125px;
 }
 
 .qrcode-container {
