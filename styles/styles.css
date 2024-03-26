@@ -55,7 +55,7 @@ strong {
 header {
   padding: 20px var(--section-padding-horizontal);
   width: calc(100vw - var(--section-padding-horizontal) * 2);
-  position: absolute;
+  position: sticky;
 
   place-items: center;
 
@@ -90,10 +90,6 @@ small {
 }
 
 /* Classes  */
-.header-logo {
-  width: 120px;
-}
-
 .header__navigation-container {
   display: flex;
   gap: 30px;
@@ -347,8 +343,21 @@ small {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+  h1 {
+    text-align: center;
+  }
+
   .main-section {
-    padding: 0;
+    flex-direction: column;
+
+    padding: 20px;
+
+    height: auto;
+  }
+
+  .main-section__image-container {
+    display: none;
+    height: 0px;
   }
 
   .section-image {
