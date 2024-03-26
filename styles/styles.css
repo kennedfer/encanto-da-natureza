@@ -342,25 +342,75 @@ small {
 }
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+  header {
+    display: none;
+  }
+
   h1 {
     text-align: center;
+    font-size: 2.1rem;
+
+    width: 100%;
   }
 
   .main-section {
     flex-direction: column;
-
     padding: 20px;
 
-    height: auto;
+    display: grid;
+    place-items: center;
+
+    justify-content: unset;
+    gap: 0px;
+    /* height: auto; */
+  }
+
+  .gallery-section {
+    padding: 20px;
+  }
+
+  .gallery-section__gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: masonry;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
   }
 
   .main-section__image-container {
     display: none;
-    height: 0px;
   }
 
   .section-image {
     display: none;
+  }
+
+  .main-section__buttons-container {
+    display: grid;
+    gap: 10px;
+
+    text-align: center;
+  }
+
+  .main-section__buttons-container > a,
+  button {
+    width: 100%;
+    /* text-align: center; */
+
+    background-color: rebeccapurple;
+  }
+
+  .main-section__buttons-container .qrcode-container {
+    display: grid;
+    place-items: center;
+  }
+
+  .qrcode-container__qrcode-image {
+    display: flex;
+
+    /* width: 50%; */
   }
 }
