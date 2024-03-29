@@ -107,7 +107,7 @@ small {
       rgba(255, 255, 255, 0.95),
       rgba(255, 255, 255, 0.95)
     ),
-    url("../assets/images/patterns/test.jpg");
+    url("../assets/images/patterns/section-pattern.webp");
 
   object-fit: fill;
   background-size: 200px;
