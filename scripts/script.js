@@ -1,5 +1,4 @@
 function scrollTo(element){
-    console.log(element.top);
     element.scrollIntoView({behavior:'smooth'}); 
 }
 
