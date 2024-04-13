@@ -14,7 +14,7 @@ header {
   display: flex;
 }
 :root {
-  --primary-color-base: 0, 94, 245;
+  --primary-color-base: 0, 225, 245;
   --primary-color: rgb(var(--primary-color-base));
   --primary-color-transparent: rgba(var(--primary-color-base), 0.15);
   --text-color-dark: rgb(59, 59, 59);
@@ -115,13 +115,13 @@ small {
   place-items: center;
   justify-content: center;
   justify-items: center;
-  gap: 20px;
+  gap: 30px;
   padding: var(--section-padding-horizontal) var(--section-padding-horizontal);
 }
 .card {
   aspect-ratio: 1;
   width: 200px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.125);
   padding: 50px;
   gap: 5px;
   place-items: center;

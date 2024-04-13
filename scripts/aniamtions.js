@@ -1,5 +1,4 @@
 const observer = new IntersectionObserver((entries) => {
-  console.log("aiaia");
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show-animation");
