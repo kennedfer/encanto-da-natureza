@@ -43,6 +43,7 @@ button {
 header {
   padding: 20px var(--section-padding-horizontal);
   width: calc(100vw - var(--section-padding-horizontal) * 2);
+  z-index: 2;
   position: fixed;
   justify-content: space-between;
   font-size: small;
@@ -66,7 +67,7 @@ small {
 .main-section {
   justify-content: space-between;
   gap: 20px;
-  background-image:url("/assets/images/patterns/section-pattern.webp");
+  background-image: url("/assets/images/patterns/section-pattern.webp");
   background-size: 200px;
   object-fit: fill;
   padding: 10px var(--section-padding-horizontal);
