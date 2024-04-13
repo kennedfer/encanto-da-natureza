@@ -20,10 +20,17 @@
           U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
     </style>
-    <link rel="shortcut icon" href="/assets/icons/favicon.webp" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/favicon.webp"
+      type="image/x-icon"
+    />
     <title>Boi encanto da Natureza</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+
+    <script defer src="scripts/aniamtions.js"></script>
   </head>
   <body>
     <header>
@@ -47,18 +54,18 @@
     </header>
     <section id="main-section" class="main-section">
       <div>
-        <h1>
+        <h1 class="animate">
           Boi Encanto<br />
           da Natureza
         </h1>
-        <p class="section-description">
+        <p class="animate section-description">
           Por meio dos espetáculos o grupo folclórico Boi Encanto da Natureza
           busca re-introduzir, principalmente, jovens (em sua maioria, pobre) à
           sociedade onde, muitas vezes de maneira preconceituosa, são ignorados
           e excluídos
         </p>
 
-        <div class="main-section__buttons-container">
+        <div class="animate main-section__buttons-container">
           <button id="about-us-button" class="primary-button">
             Saiba Mais
           </button>
@@ -73,7 +80,7 @@
           </p>
         </div>
       </div>
-      <div class="main-section__image-container">
+      <div class="animate main-section__image-container">
         <img
           loading="lazy"
           alt="Logomarca do grupo folclórico Boi Encanto da Natureza"
@@ -83,10 +90,10 @@
       </div>
     </section>
     <section id="gallery-section" class="gallery-section">
-      <div class="gallery-section__header">
+      <div class="animate gallery-section__header">
         <h1>nossa galeria</h1>
       </div>
-      <div class="gallery-section__gallery-container">
+      <div class="animate gallery-section__gallery-container">
         <img
           loading="lazy"
           class="gallery-container__gallery-image"
@@ -211,14 +218,14 @@
           src="/assets/images/gallery/gallery15.webp"
         />
       </div>
-      <div class="gallery-section__show-more-button-container">
+      <div class="animate gallery-section__show-more-button-container">
         <button id="show-more-button" class="primary-button show-more-button">
           mostrar mais
         </button>
       </div>
     </section>
     <div class="cards-container">
-      <div class="card">
+      <div class="animate card">
         <div class="card__icon">
           <img src="./assets/icons/calendar.svg" alt="Icone de calendario" />
         </div>
@@ -228,7 +235,7 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="animate card">
         <div class="card__icon">
           <img src="./assets/icons/peoples.svg" alt="Icone de pessoas" />
         </div>
@@ -239,7 +246,7 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="animate card">
         <div class="card__icon">
           <img
             src="./assets/icons/book.svg"
@@ -256,12 +263,12 @@
     <section id="about-section" class="main-section about-section">
       <img
         alt="Logomarca do grupo folclórico Boi Encanto da Natureza"
-        class="section-image"
+        class="animate section-image"
         src="assets/images/sections/ricardo-encantodanatureza.webp"
       />
       <div>
-        <h1>sobre nós</h1>
-        <p class="section-description">
+        <h1 class="animate">sobre nós</h1>
+        <p class="animate section-description">
           Criado em 05 de abril 2005, pela senhora Fátima Cruz para inclusão das
           minorias do povoado Livramento nas brincadeiras juninas. Composto por
           brincantes das mais diversas faixas etárias, de crianças à adultos,
@@ -272,21 +279,21 @@
     </section>
     <section id="donation-section" class="main-section donation-section">
       <div>
-        <h1>doações</h1>
-        <p class="section-description">
+        <h1 class="animate">doações</h1>
+        <p class="animate section-description">
           Estamos contando com você! Sua doação faz toda a diferença para
           preservarmos as raízes do nosso grupo folclórico. Seja parte ativa da
           nossa história, contribua agora e fortaleça a cultura que amamos.
           Agradecemos por seu apoio!
         </p>
       </div>
-      <div class="qrcode-container">
+      <div class="animate qrcode-container">
         <img
           alt="Qrcode do pix para doações"
           class="section-image qrcode-container__qrcode-image"
           src="assets/images/sections/qrcode-pix-eliana.png"
         />
-        <span class="qrcode-container__qrcode-caption">
+        <span class="animate qrcode-container__qrcode-caption">
           Pix: Eliana de Jesus Ferreira
         </span>
       </div>
