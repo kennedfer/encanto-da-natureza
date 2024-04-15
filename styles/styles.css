@@ -1,3 +1,13 @@
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+section {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
 h1,
 html {
   font-family: var(--text-font);
@@ -47,8 +57,7 @@ header {
   position: fixed;
   justify-content: space-between;
   font-size: small;
-  background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  background-color: transparent;
 }
 footer {
   padding: 25px;
